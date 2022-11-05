@@ -1,7 +1,7 @@
 import requests
 import random
-pagerandom = random.choice(range(1, 41))
-idrandom = random.choice(range(5, 15))
+pagerandom = random.randint(1, 41)
+idrandom = random.randint(5, 15)
 print(pagerandom)
 print(idrandom)
 url = "https://api.disneyapi.dev/characters?page={}".format(pagerandom)
